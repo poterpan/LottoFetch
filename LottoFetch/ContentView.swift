@@ -5,19 +5,26 @@
 //  Created by Poter Pan on 2024/2/18.
 //
 
+import Foundation
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = LottoViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if let lottoResult = viewModel.latestResult {
+                Text("期次: \(lottoResult.periodString)")
+                Text("開獎號碼(大小順序): \(lottoResult.drawNumberSizeFormatted)")
+                Text("兌獎截止: \(lottoResult.redeemableDate)")
+            }
         }
-        .padding()
+        .onAppear {
+            viewModel.fetchLottoResults()
+        }
     }
 }
+
 
 #Preview {
     ContentView()

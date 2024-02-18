@@ -11,6 +11,8 @@
 		E7273BC62B81A16E005599E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7273BC52B81A16E005599E4 /* ContentView.swift */; };
 		E7273BC82B81A170005599E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7273BC72B81A170005599E4 /* Assets.xcassets */; };
 		E7273BCB2B81A170005599E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7273BCA2B81A170005599E4 /* Preview Assets.xcassets */; };
+		E7273BD22B81A217005599E4 /* LottoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7273BD12B81A217005599E4 /* LottoViewModel.swift */; };
+		E7273BD42B81A48D005599E4 /* LottoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7273BD32B81A48D005599E4 /* LottoResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E7273BC52B81A16E005599E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7273BC72B81A170005599E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7273BCA2B81A170005599E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7273BD12B81A217005599E4 /* LottoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewModel.swift; sourceTree = "<group>"; };
+		E7273BD32B81A48D005599E4 /* LottoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				E7273BC32B81A16E005599E4 /* LottoFetchApp.swift */,
 				E7273BC52B81A16E005599E4 /* ContentView.swift */,
+				E7273BD32B81A48D005599E4 /* LottoResult.swift */,
+				E7273BD12B81A217005599E4 /* LottoViewModel.swift */,
 				E7273BC72B81A170005599E4 /* Assets.xcassets */,
 				E7273BC92B81A170005599E4 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7273BC62B81A16E005599E4 /* ContentView.swift in Sources */,
+				E7273BD42B81A48D005599E4 /* LottoResult.swift in Sources */,
 				E7273BC42B81A16E005599E4 /* LottoFetchApp.swift in Sources */,
+				E7273BD22B81A217005599E4 /* LottoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
